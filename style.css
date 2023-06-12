@@ -24,6 +24,7 @@ body {
     display:flex;
     margin: 0;
     padding: 0;
+    font-size: 0.7em;
 }
 li {
     list-style: none;
@@ -32,12 +33,56 @@ li {
 a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
 }
 .push {
     margin-left: auto
 }
 
+@media only screen and (max-width:600px){
+    .navBar {
+        font-size: 0.5em;
+        padding:0;
+    }
+}
+@media only screen and (max-width:350px){
+    .navBar {
+        font-size: 0.3em;
+        padding:0;
+    }
+    
+}
+
+/* Cover Styling */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Grid Styling */
+
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width:100%;
+}
+
+.box {
+    background-color: #444;
+    padding:130px;
+    margin: 20px;
+}
+/*  Footer Styling */
+
+footer {
+    text-align: center;
+}
 
 /*  BLOCK STYLING */
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
